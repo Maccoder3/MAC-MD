@@ -1037,3 +1037,18 @@ if (Config.WORKTYPE !== 'private') {
     }
   });
 }
+//send 5 button image by xeon
+    BixbyMD.send5ButImg = async (jid , text = '' , footer = '', img, but = [], thumb, options = {}) =>{
+        let message = await prepareWAMessageMedia({ image: img, jpegThumbnail:thumb }, { upload: BixbyMD.waUploadToServer })
+        var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+        templateMessage: {
+        hydratedTemplate: {
+        imageMessage: message.imageMessage,
+               "hydratedContentText": text,
+               "hydratedFooterText": footer,
+               "hydratedButtons": but
+            }
+            }
+            }), options)
+            BixbyMD.relayMessage(jid, template.message, { messageId: template.key.id })
+    }
