@@ -2,7 +2,7 @@
 <html>
 <body>
   <p align="center">
-    <a href="https://chat.whatsapp.com/IpDbNkTpz1l520HHFuS7B7">
+    <a href="https://chat.whatsapp.com/HbohD666f3PD1ffOWiWe1f">
       <img alt="Support" height="300"
         src="https://telegra.ph/file/d56271ce89ab876ba00b8.jpg">
     </a>
@@ -12,7 +12,7 @@
     <div hx-get="/visitor_count" hx-target="this" hx-swap="innerHTML"></div>
   </p>
   <p align="center">
-    <a href="https://chat.whatsapp.com/BEhEne7RdGBC3y5vYltuxL" target="_blank">
+    <a href="https://chat.whatsapp.com/HbohD666f3PD1ffOWiWe1f" target="_blank">
       <img alt="whatsapp Group" src="https://img.shields.io/badge/ MAC Support Group -25D366?style=for-the-badge&logo=whatsapp&logoColor=blue" />
     </a>
   </p>
