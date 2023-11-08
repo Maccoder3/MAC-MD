@@ -2,7 +2,7 @@
 <html>
 <body>
   <p align="center">
-    <a href="https://chat.whatsapp.com/IpDbNkTpz1l520HHFuS7B7">
+    <a href="https://chat.whatsapp.com/HbohD666f3PD1ffOWiWe1f">
       <img alt="Support" height="300"
         src="https://telegra.ph/file/d56271ce89ab876ba00b8.jpg">
     </a>
