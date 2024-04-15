@@ -37,7 +37,7 @@
 
  <hr>
  
-## DEVELOPES
+## DEVELOPE𝙍S
 [`𝙈𝘼𝘾 𝙏𝙀𝘾𝙃`](https://wa.me/256705036288)
 
 [`𝙄𝘽𝙍𝘼𝙃𝙄𝙈 𝙏𝙀𝘾𝙃`](https://www.youtube.com/@ibrahimmdgpt)
