@@ -11,7 +11,7 @@
 
 p>
                        
-  <a href="https://ibb.co/N6NMDtn"><img src="https://telegra.ph/file/eecd5673d4d80563d645b.jpg" alt="01" border="0" /></a>     
+  <a href="https://ibb.co/N6NMDtn"><img src="https://telegra.ple/eecd567d80563d645b.jpg" alt="01" border="0" /></a>     
 ## Join my channel for updates and get free cc
 <a href="https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y" target="_blank">
     <img alt="whatsapp Group" src="https://img.shields.io/badge/ Whatsapp Support Channel -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
