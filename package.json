@@ -78,5 +78,11 @@
         "yargs": "^17.6.0",
         "youtube-yts": "^2.0.0",
         "youtubedl-core": "npm:@distube/ytdl-core"
-   }
+      },
+    "overrides": {
+        "cache-manager": "5.2.2"
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5"
+    }
 }
