@@ -7,7 +7,7 @@ import path from 'path'
 import { fileURLToPath } from 'url';
 
 figlet(
-  'GURU BOT',
+  'MAC MD',
   {
     font: 'Ghost',
     horizontalLayout: 'default',
@@ -46,11 +46,11 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'Assets')));
 
 app.get('/', (req, res) => {
-  res.redirect('/guru.html');
+  res.redirect('/mac.html');
 });
 
 app.listen(port, () => {
-  console.log(chalk.green(`Port ${port} is open`))
+  console.log(chalk.blue(`Port ${port} is open`))
 })
 
 let isRunning = false
