@@ -2,9 +2,9 @@
   "name": "MAC-MD",
   "version": "1.0.0",
   "description": "A MAC-MD WhatsApp bot created using Node.js",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name MAC-MD",
+    "start": "pm2 start index.mjs --deep-monitoring --attach --name MAC-MD",
     "stop": "pm2 stop MAC-MD",
     "restart": "pm2 restart MAC-MD"
    },
