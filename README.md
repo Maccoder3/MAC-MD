@@ -17,7 +17,7 @@
 </p> 
 
 ## DEPLOYMENT STEPS
-1,TAP ON MAC APP
+1,TAP ON GET SESS
 
 
 
@@ -26,13 +26,18 @@
 
 
 
-3,TAP DEPLOY AND DEPLOY IT ON HEROKU..,NO BAN
+3,TAP DEPLOY  ON HEROKU..,NO BAN
 
  <hr>
 
-## 𝗧𝗔𝗣 𝗢𝗡 𝗧𝗛𝗘 𝗔𝗣𝗣 𝗧𝗢 𝗗𝗘𝗣𝗟𝗢𝗬 𝗠𝗔𝗖 𝗕𝗢𝗧
+## GET SESSION
   
-[𝗠𝗔𝗖 𝗔𝗣𝗣](https://mac-scanne-82c47d62d04d.herokuapp.com/)
+[Scan](https://mac-scanne-82c47d62d04d.herokuapp.com/)
+
+
+*****
+
+[Deploy](https://mac-scanne-82c47d62d04d.herokuapp.com/)
 
 
  <hr>
@@ -40,7 +45,7 @@
 ## DEVELOPE𝙍S
 [`𝙈𝘼𝘾 𝙏𝙀𝘾𝙃`](https://wa.me/256705036288)
 
-[`𝙄𝘽𝙍𝘼𝙃𝙄𝙈 𝙏𝙀𝘾𝙃`](https://www.youtube.com/@ibrahimmdgpt)
+[`𝙄𝘽𝙍𝘼𝙃𝙄𝙈 𝙏𝙀𝘾𝙃`](https://youtube.com/@ibrahimaitech?si=oL04gdgSsXhfHxJX)
 
 
 
