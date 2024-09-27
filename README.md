@@ -1,10 +1,10 @@
-
+# MAC MD V2.0
 
 > **Warning**: Do not sell this script.
 
 <center>
 
-<img alt=🪄🍪 height="300" src="https://telegra.ph/file/eecd5673d4d80563d645b.jpg">
+<img alt=🪄🍪 height="300" src="https://files.catbox.moe/sti9pk.jpg">
 
 </center>
 
@@ -32,12 +32,12 @@
 
 ## GET SESSION
   
-[Scan](https://mac-scanne-82c47d62d04d.herokuapp.com/)
+[Scan](https://mac-code.onrender.com)
 
 
 *****
 
-[Deploy](https://mac-scanne-82c47d62d04d.herokuapp.com/)
+[Deploy](https://dashboard.heroku.com/new?template=https://github.com/Maccoder3/mac-ai)
 
 
  <hr>
