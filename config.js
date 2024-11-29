@@ -1,93 +1,53 @@
-import { watchFile, unwatchFile } from 'fs'
-import chalk from 'chalk'
-import { fileURLToPath } from 'url'
-import fs from 'fs'
+const fs = require("fs");
+require("dotenv").config();
 
-import dotenv from 'dotenv'
-dotenv.config()
-
-const ownervb = process.env.OWNERS || "94757096717;THENULA;6281255369012;Ash"
-
-
-const ownerlist = ownervb.split(';');
-
-global.owner = [];
-for (let i = 0; i < ownerlist.length; i += 2) {
-    const owner = [
-        ownerlist[i],            
-        ownerlist[i + 1],         
-        true                        
-    ];
-    global.owner.push(owner);
-}
-
-//global.pairingNumber = "" //put your bot number here
-
-global.mods = ['94757096717', '32460248586']
-global.prems = ['94757096717', '32460248586', '919398758484']
-global.allowed = ['917605902011', '32460248586', '19152999993']
-global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
-global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
-global.keysxteammm = [
-  '29d4b59a4aa687ca',
-  '5LTV57azwaid7dXfz5fzJu',
-  'cb15ed422c71a2fb',
-  '5bd33b276d41d6b4',
-  'HIRO',
-  'kurrxd09',
-  'ebb6251cc00f9c63',
-]
-global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
-global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
-global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = ['GataDios']
-
-global.APIs = {
-  // API Prefix
-  // name: 'https://website'
-  xteam: 'https://api.xteam.xyz',
-  dzx: 'https://api.dhamzxploit.my.id',
-  lol: 'https://api.lolhuman.xyz',
-  violetics: 'https://violetics.pw',
-  neoxr: 'https://api.neoxr.my.id',
-  zenzapis: 'https://zenzapis.xyz',
-  akuari: 'https://api.akuari.my.id',
-  akuari2: 'https://apimu.my.id',
-  nrtm: 'https://fg-nrtm.ddns.net',
-  bg: 'http://bochil.ddns.net',
-  fgmods: 'https://api-fgmods.ddns.net',
-}
-global.APIKeys = {
-  // APIKey Here
-  // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'd90a9e986e18778b',
-  'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
-  'https://api.neoxr.my.id': `${keysneoxr}`,
-  'https://violetics.pw': 'beta',
-  'https://zenzapis.xyz': `${keysxxx}`,
-  'https://api-fgmods.ddns.net': 'fg-dylux',
-}
-
-// Sticker WM
-global.botname = process.env.BOTNAME
-global.premium = 'true'
-global.packname = 'MAC┃ᴮᴼᵀ'
-global.author = 'MAC MD'
+module.exports = {
+  //==========================================- MAIN - CONFIGS -==================================================================
+  SESSION_ID: process.env.SESSION_ID || "-------ADD YOUR SESSION_ID------------",
+  // ADD Your Session Id 
+  MONGODB: process.env.MONGODB || "-------------ADD YOUR MONGODB URL-------------",
+    // ADD Your MongoDB Database URL
+  PREFIX: process.env.PREFIX || ".",
+  // Add Your Custom Prefix 
+  mode: process.env.mode || "public",
+  // Add Your Bot Mode 
+  // private = Only Working For Owner Number
+  // public = AnyOne Working
+  // inbox = Only Working  Inbox
+  // groups = only working in group
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "94767096711",
+  //========================================- OTHER - CONFIGS -=====================================================================
+  AUTO_VOICE: process.env.AUTO_VOICE || "true",
+  ANTI_BAD_WORDS_ENABLED: process.env.ANTI_BAD_WORDS_ENABLED || "true",
+  AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
+  ANTI_BAD_WORDS: (process.env.ANTI_BAD_WORDS || "pakayo,huththo").split(','),
+  ANTI_LINK: process.env.ANTILINK || "true",
+  ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
+  AUTO_READ_CMD: process.env.AUTO_READ_CMD || "true",
+  ALWAYS_TYPING: process.env.ALWAYS_TYPING || "true",
+  ALWAYS_RECORDING: process.env.ALWAYS_RECORDING || "true",
+  ANTI_BOT: process.env.ANTI_BOT || "true",
+  ANTI_DELETE: process.env.ANTI_DELETE || "true",
+  packname: process.env.packname || "Thenux",
+  author: process.env.author || "MAC MD",
+  //==========================================- API-CONFIGS -==========================================================
+  OPENWEATHER_API_KEY: process.env.OPENWEATHER_API_KEY || "2d61a72574c11c4f36173b627f8cb177", //openweathermap.org
+  ELEVENLABS_API_KEY: process.env.ELEVENLABS_API_KEY || "sk_6438bcc100d96458f8de0602aec662f4ba14b905fd090ad3", //elevenlabs.io
+  SHODAN_API: process.env.SHODAN_API || "cbCkidr6qd7AFVaYs56MuCouGfM8gFki", //developer.shodan.io
+  PEXELS_API_KEY: process.env.PEXELS_API_KEY || "39WCzaHAX939xiH22NCddGGvzp7cgbu1VVjeYUaZXyHUaWlL1LFcVFxH", // pexels.com
+  OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
+  PIXABAY_API_KEY: process.env.PIXABAY_API_KEY || "23378594-7bd620160396da6e8d2ed4d53", // pixabay.com
+  ZIPCODEBASE_API_KEY: process.env.ZIPCODEBASE_API_KEY || "0f94a5f0-6ea4-11ef-81da-579be4fb031c", // zipcodebase.com
+  GOOGLE_API_KEY: process.env.GOOGLE_API_KEY || "AIzaSyD93IeJsouK51zjKgyHAwBIAlqr-a8mnME", 
+  GOOGLE_CX: process.env.GOOGLE_CX || "AIzaSyD93IeJsouK51zjKgyHAwBIAlqr-a8mnME", 
+  PASTEBIN_API_KEY: process.env.PASTEBIN_API_KEY || "uh8QvO6vQJGtIug9WvjdTAPx_ZAFJAxn",
 
 
-global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
-global.rwait = '⌛'
-global.dmoji = '🤭'
-global.done = '✅'
-global.error = '❌'
-global.xmoji = '🔥'
+//------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
 
-global.multiplier = 69
-global.maxwarn = '3'
+  
 
-let file = fileURLToPath(import.meta.url)
-watchFile(file, () => {
-  unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
-  import(`${file}?update=${Date.now()}`)
-})
+
+};
