@@ -108,7 +108,7 @@ const {
     
     https://wa.me/94767096711`;
     
-    conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/mJ5vk7c/Thenu-MD-new-card-1.png` }, caption: up })
+    conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://files.catbox.moe/sti9pk.jpg` }, caption: up })
     
     }
     })
